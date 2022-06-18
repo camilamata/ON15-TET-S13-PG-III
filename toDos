@@ -1,0 +1,6 @@
+GET ALL
+Leitura de todas as rotas cadastradas no seu banco de dados
+
+VERBO HTTP: {GET}
+
+DEFINIÇÃO DE ROTA: /all
