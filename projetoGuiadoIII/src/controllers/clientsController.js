@@ -17,7 +17,7 @@ const register = async (req, res) => {
                 registeredClient
             })
         }
-    }
+    } 
      catch (error) {
         console.error(error)
     }
@@ -25,7 +25,7 @@ const register = async (req, res) => {
 
 //Acessa o cadastro do atleta por nome | GET
 const getByName = async(req, res) => {    
-    try {
+    try { 
         const name = req.query.name
         const foundClient = await ClientsSchema.find({name: {$regex : name, $options: 'i'}})
 
