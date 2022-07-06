@@ -52,7 +52,7 @@ const weekdayAttendance = async(req, res) => {
         const searchAtendance = await ClientsSchema.find({weekDays : {$regex: weekDay, $options: 'i'}})
 
         res.status(200).json({
-            "Essa é a quantidade de atletas que frequentam a academia neste dia": searchAtendance.length,
+            "Essa é a quantidade de atletas que frequentam a academia neste dia": searchAtendance.length,  
             searchAtendance
         })
     } catch (error) {
